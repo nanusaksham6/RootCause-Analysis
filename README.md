@@ -201,4 +201,4 @@ live embedding call and is skipped automatically when `OPENROUTER_API_KEY` is un
 
 ## License
 
-MIT — see [LICENSE](LICENSE). © 2026 Vinesh Sharda.
+MIT — see [LICENSE](LICENSE). © 2026 Saksham Katna.
