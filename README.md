@@ -36,7 +36,19 @@ single source of truth for the pipeline.
 ## Quickstart (PowerShell)
 
 ```powershell
-git clone https://github.com/x4ddy/RootCause.git
+https://github.com/nanusaksham6/RootCause-Analysis.git
+cd RootCause-Analysis
+
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+
+# Configure your OpenRouter key
+Copy-Item .env.example .env
+# then edit .env and set OPENROUTER_API_KEY=sk-or-v1-...
+
+# Run the MCP server against the bundled sample data — no data prep needed
+python src\rootcause_server.py
 cd RootCause
 
 python -m venv .venv
